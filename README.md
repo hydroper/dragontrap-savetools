@@ -19,12 +19,12 @@ Clone the repository into the game's top directory.
 
 ```sh
 # takes the ../../SAVE1.decrypt.dt and encrypts it into
-# SAVE1.dt
+# ../../SAVE1.dt
 cd game-path/dragontrap-savetools/encrypt
 dotnet run
 
 # takes the ../../SAVE1.dt and decrypts it into
-# SAVE1.decrypt.dt
+# ../../SAVE1.decrypt.dt
 cd game-path/dragontrap-savetools/decrypt
 dotnet run
 ```
