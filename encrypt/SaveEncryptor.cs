@@ -13,7 +13,7 @@ public class SaveEncryptor
 
         RijndaelManaged rijndaelManaged = new RijndaelManaged();
         FileStream fileStream = new FileStream(resultFilename, FileMode.Create, FileAccess.Write);
-        CryptoStream cryptoStream = new CryptoStream(fileStream, rijndaelManaged.CreateEncryptor(GameEngine.Fnord, GameEngine.Foo), CryptoStreamMode.Write);
+        CryptoStream cryptoStream = new CryptoStream(fileStream, rijndaelManaged.CreateEncryptor(SaveToolsCore.Fnord, SaveToolsCore.Foo), CryptoStreamMode.Write);
 
         using (StreamWriter outputFile = new StreamWriter(cryptoStream))
         {

@@ -13,7 +13,7 @@ public class SaveDecryptor
 
         using (StreamWriter outputFile = new StreamWriter(resultFilename))
         {
-            foreach (var line in GameEngine.ReadTextFile(filename, fromResource: false, isEncrypted: false))
+            foreach (var line in SaveToolsCore.ReadTextFile(filename, fromResource: false, isEncrypted: false))
             {
                 outputFile.WriteLine(line);
             }

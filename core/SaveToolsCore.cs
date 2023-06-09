@@ -5,7 +5,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-public class GameEngine
+public class SaveToolsCore
 {
     public static string[] ReadTextFile(string filename, bool fromResource, bool isEncrypted)
     {
@@ -97,18 +97,6 @@ public class GameEngine
     public static Stream GetResourceStream(string resourceName, bool isFullString)
     {
         throw new Exception("GetResourceStream is unimplemented.");
-        /*
-        if (!isFullString)
-        {
-            resourceName = "DragonTrap.Resources." + resourceName;
-        }
-        Stream manifestResourceStream = assembly.GetManifestResourceStream(resourceName);
-        if (manifestResourceStream == null)
-        {
-            throw new Exception("Can not locate resource" + resourceName);
-        }
-        return manifestResourceStream;
-        */
     }
 
     public static byte[] Fnord
